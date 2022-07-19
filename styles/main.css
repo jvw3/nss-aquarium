@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    background-image: url(/images/bernard-hermant-76-DuDY1Vk0-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.allcontent {
+    margin: 0 auto;
+    /* border: 5px solid green; */
+    /* background-color: lightcyan; */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* top banner of Martin's aquarium page */
+.header {
+    background: rgb(0, 0, 0);
+        /* background: linear-gradient(90deg, rgba(0, 0, 0, 1) 37%, rgba(6, 6, 113, 1) 100%, rgba(0, 212, 255, 1) 100%); */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* column on the left of page  */
+.columnone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width:60%; */
+    text-align: center;
+    width: 30%;
+    border-radius: 20px;
+}
+
+/* fish thoughts column */
+.rightcolumn {
+    text-align: center;
+    background-color: lightcyan;
+    width: 20vw;
+    border-radius: 20px;
+    height: 500px;
+    box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
+}
+
+.columnthree {
+    width: 20vw;
+}
+
+.traveltips {
+height: 20%;
+}
+
+.traveltips h2 {
+    text-align: center;
+}
+
+.fishlocations {
+height: 20%;
+}
+
+.fishlocations h2 {
+    text-align: center;
+}
+
+.fishthoughts ul {
+    list-style: none;
+}
+
+/* CSS styling for fish currently owned section. */
+.allfish {
+    /* border: 2px solid rgba(9, 9, 50, 0.794); */
+    border-radius: 20px;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
+}
+
+.h2text {
+    width: 50vw;
+}
+
+/* CSS Styling for travel tips section */
+.traveltips {
+        border-radius: 20px;
+        background-color: lightcyan;
+        box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
+}
+
+/* CSS Styling for fish locations sections */
+.fishlocations {
+        border-radius: 20px;
+        background-color: lightcyan;
+        box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
+}
+/* CSS STYLING FOR SALMON HOVER CARD */
+.salmonimage {
+    width: 400px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/drew-farwell-9vkJPfh9Anw-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(64, 64, 64);
+    transition: 0.5s;
+}
+.salmonimage p {
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+}
+.salmonimage:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+.salmonimage:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* CSS STYLING FOR BLUEGILL HOVER CARD */
+.bluegillimage {
+    width: 400px;
+    height: 20vh;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/bluegill.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(64, 64, 64);
+}
+.bluegillimage p {
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+}
+.bluegillimage:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
+    transform: scale(1.05);
+}
+.bluegillimage:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* CSS STYLING FOR Lake Sturgeon HOVER CARD */
+.sturgeonimage {
+    width: 400px;
+    height: 20vh;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/cropped-ID_LakeSturgeon_1200x490.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(64, 64, 64);
+}
+
+.sturgeonimage p {
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 15px;
+}
+
+.sturgeonimage:hover {
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
+    transform: scale(1.05);
+}
+
+.sturgeonimage:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 2000px) {
+    .bluegillimage  {
+        width: 350px;
+
+    }
+}
+
+
+
+
