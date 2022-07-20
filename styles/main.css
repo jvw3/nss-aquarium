@@ -1,19 +1,22 @@
+
+/* CSS styling for body */
 body {
     margin: 0;
-    background-image: url(/images/bernard-hermant-76-DuDY1Vk0-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+/* CSS styling for main content of page (allcontent) */
 .allcontent {
-    margin: 0 auto;
-    /* border: 5px solid green; */
-    /* background-color: lightcyan; */
-    width: 90%;
+    margin: 0 ;
+    width: 100%;
+    height: 1500px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 /* top banner of Martin's aquarium page */
@@ -25,84 +28,146 @@ body {
     justify-content: flex-start;
 }
 
-/* column on the left of page  */
-.columnone {
+/* CSS Styling for banner image text. */
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    
+}
+
+/* CSS Styling for banner image. */
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/bernard-hermant-76-DuDY1Vk0-unsplash.jpg);
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/* CSS Styling for OVERLAY of banner image. */
+.overlay {
+    background-color: rgba(29, 39, 131, 0.958);
+    width: 100%;
+    height: 500px;
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width:60%; */
-    text-align: center;
-    width: 30%;
-    border-radius: 20px;
+    align-items: center;
 }
 
-/* fish thoughts column */
+/* column on the left of page  */
+/* .columnone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center; 
+    width: 40vw;
+} */
+
+/* column on the right of page. */
 .rightcolumn {
     text-align: center;
-    background-color: lightcyan;
-    width: 20vw;
-    border-radius: 20px;
-    height: 500px;
-    box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
-}
-
-.columnthree {
-    width: 20vw;
-}
-
-.traveltips {
-height: 20%;
+    height: 100%;
+    width: 40vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .traveltips h2 {
     text-align: center;
 }
-
-.fishlocations {
-height: 20%;
+.tipsborder {
+    padding: 10px;
+    background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 138, 1) 54%, rgba(0, 0, 0, 1) 100%);
 }
 
 .fishlocations h2 {
     text-align: center;
 }
+.fishlocationsborder {
+    padding: 10px;
+    background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 138, 1) 54%, rgba(0, 0, 0, 1) 100%);
+}
 
-.fishthoughts ul {
+.fishtankcare h2 {
+    text-align: center;
+}
+
+.fishtankcareborders {
+    padding: 10px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 56, 138, 1) 54%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* removing bulletpoints from fish tank care section. */
+.fishtankcare ul {
+    list-style: none;
+}
+/* removing bulletpoints from fish locations section. */
+.fishlocations ul {
     list-style: none;
 }
 
-/* CSS styling for fish currently owned section. */
-.allfish {
-    /* border: 2px solid rgba(9, 9, 50, 0.794); */
-    border-radius: 20px;
-    background-color: lightcyan;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
+.fishtankcare li {
+    font-size: 1.25em;
+    line-height: 0.5em;
 }
 
-.h2text {
-    width: 50vw;
+.traveltips p {
+    font-size: 1.25em;
+}
+
+.fishlocations li {
+    font-size: 1.25em;
+    line-height: 3em;
+}
+
+
+/* CSS styling for fish currently owned section. */
+.allfish {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; 
+    width:60vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 1200px;
+
+}
+
+.allfishheader {
+    width: 60vw;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
 }
 
 /* CSS Styling for travel tips section */
-.traveltips {
-        border-radius: 20px;
-        background-color: lightcyan;
-        box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
-}
+/* .traveltips {
+        /* border-radius: 20px; */
+        /* box-shadow: 1px 1px 20px 5px rgb(64, 64, 64); */
+        /* height: 400px; 
+} */
 
-/* CSS Styling for fish locations sections */
-.fishlocations {
-        border-radius: 20px;
-        background-color: lightcyan;
-        box-shadow: 1px 1px 20px 5px rgb(64, 64, 64);
-}
+/* CSS Styling for fish locations sections
+/* .fishlocations {
+        /* border-radius: 20px; */
+        /* background-color: lightcyan; */
+        /* box-shadow: 1px 1px 20px 5px rgb(64, 64, 64); 
+} */
 /* CSS STYLING FOR SALMON HOVER CARD */
-.salmonimage {
-    width: 400px;
-    height: 20vh;
+.Salmonimage {
+    width: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     background-image: url(/images/drew-farwell-9vkJPfh9Anw-unsplash\ \(1\).jpg);
@@ -112,27 +177,28 @@ height: 20%;
     box-shadow: 1px 1px 10px rgb(64, 64, 64);
     transition: 0.5s;
 }
-.salmonimage p {
+.Salmonimage p {
     color: white;
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
-    font-size: 15px;
+    font-size: 0.9em;
+    text-align: center;
 }
-.salmonimage:hover {
-    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
+.Salmonimage:hover {
+    box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
     transition: 0.6s;
     transform: scale(1.05);
 }
-.salmonimage:hover p{
+.Salmonimage:hover p{
     opacity: 1;
     transform: scale(1);
 }
 
 /* CSS STYLING FOR BLUEGILL HOVER CARD */
-.bluegillimage {
-    width: 400px;
-    height: 20vh;
+.Bluegillimage {
+    width: 60%;
+    height: 20%;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -142,26 +208,27 @@ height: 20%;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgb(64, 64, 64);
 }
-.bluegillimage p {
+.Bluegillimage p {
     color: white;
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
-    font-size: 15px;
+    font-size: 0.9em;
+    text-align: center;
 }
-.bluegillimage:hover {
+.Bluegillimage:hover {
     box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
     transform: scale(1.05);
 }
-.bluegillimage:hover p {
+.Bluegillimage:hover p {
     opacity: 1;
     transform: scale(1);
 }
 
 /* CSS STYLING FOR Lake Sturgeon HOVER CARD */
-.sturgeonimage {
-    width: 400px;
-    height: 20vh;
+.Sturgeonimage {
+    width: 60%;
+    height: 20%;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -172,30 +239,25 @@ height: 20%;
     box-shadow: 1px 1px 10px rgb(64, 64, 64);
 }
 
-.sturgeonimage p {
+.Sturgeonimage p {
     color: white;
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
-    font-size: 15px;
+    font-size: 0.9em;
+    text-align: center;
 }
 
-.sturgeonimage:hover {
+.Sturgeonimage:hover {
     box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset, 1px 1px 20px 5px rgb(64, 64, 64);
     transform: scale(1.05);
 }
 
-.sturgeonimage:hover p {
+.Sturgeonimage:hover p {
     opacity: 1;
     transform: scale(1);
 }
 
-@media (max-width: 2000px) {
-    .bluegillimage  {
-        width: 350px;
-
-    }
-}
 
 
 
